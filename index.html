@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ئاکام ♥ تریسکۆ</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="welcome-screen">
+
+<div class="logo">
+<h1>ئاکام ♥ تریسکۆ</h1>
+<p>بەخێربێیت بۆ چاتی خۆشەویستی</p>
+</div>
+
+<div class="login-box">
+
+<input
+type="text"
+id="username"
+placeholder="ناوی خۆت بنووسە">
+
+<button onclick="joinChat()">
+چوونە ژووری چات
+</button>
+
+</div>
+
+</div>
+
+<div class="chat-screen" id="chatScreen">
+
+<div class="chat-header">
+<h2>ئاکام ♥ تریسکۆ</h2>
+</div>
+
+<div id="messages"></div>
+
+<div class="chat-input">
+
+<input
+type="text"
+id="messageInput"
+placeholder="نامە بنووسە...">
+
+<button onclick="sendMessage()">
+ناردن
+</button>
+
+</div>
+
+</div>
+
+<script type="module" src="app.js"></script>
+
+</body>
+</html>
