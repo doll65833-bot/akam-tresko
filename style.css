@@ -1,0 +1,160 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI",sans-serif;
+}
+
+body{
+background:linear-gradient(
+135deg,
+#ff4d88,
+#ff99cc,
+#ffd6e7
+);
+height:100vh;
+overflow:hidden;
+}
+
+.welcome-screen{
+width:100%;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+animation:fadeIn 1.5s ease;
+}
+
+.logo h1{
+font-size:55px;
+color:#fff;
+text-shadow:0 0 20px rgba(255,255,255,.7);
+animation:pulse 2s infinite;
+}
+
+.logo p{
+margin-top:10px;
+color:white;
+font-size:18px;
+}
+
+.login-box{
+margin-top:35px;
+display:flex;
+flex-direction:column;
+gap:15px;
+width:320px;
+}
+
+.login-box input{
+padding:15px;
+border:none;
+border-radius:15px;
+font-size:16px;
+outline:none;
+}
+
+.login-box button{
+padding:15px;
+border:none;
+border-radius:15px;
+background:#ff0066;
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.3s;
+}
+
+.login-box button:hover{
+transform:scale(1.05);
+background:#e6005c;
+}
+
+.chat-screen{
+display:none;
+height:100vh;
+background:white;
+}
+
+.chat-header{
+height:70px;
+background:#ff0066;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+#messages{
+height:calc(100vh - 140px);
+overflow-y:auto;
+padding:15px;
+background:#fff5fa;
+}
+
+.message{
+background:white;
+padding:10px 15px;
+margin-bottom:10px;
+border-radius:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.08);
+max-width:80%;
+word-wrap:break-word;
+}
+
+.chat-input{
+position:fixed;
+bottom:0;
+width:100%;
+display:flex;
+padding:10px;
+background:white;
+gap:10px;
+}
+
+.chat-input input{
+flex:1;
+padding:14px;
+border:1px solid #ddd;
+border-radius:15px;
+outline:none;
+}
+
+.chat-input button{
+padding:14px 20px;
+background:#ff0066;
+color:white;
+border:none;
+border-radius:15px;
+cursor:pointer;
+}
+
+.chat-input button:hover{
+background:#e6005c;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+}
+50%{
+transform:scale(1.05);
+}
+100%{
+transform:scale(1);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
